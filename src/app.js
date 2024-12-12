@@ -7,5 +7,17 @@ import "./assets/img/4geeks.ico";
 
 window.onload = function() {
   //write your code here
-  console.log("Hello Rigo from the console!");
+  let pronoun = ["the", "our"];
+  let adj = ["great", "big"];
+  let noun = ["jogger", "racoon"];
+
+  for (let p = 0; p < 2; p++) {
+    for (let a = 0; a < 2; a++) {
+      for (let n = 0; n < 2; n++) {
+        document.querySelector("#dng").innerHTML +=
+          pronoun[p] + adj[a] + noun[n] + ".com";
+        console.log("name domain");
+      }
+    }
+  }
 };
