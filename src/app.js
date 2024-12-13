@@ -10,13 +10,16 @@ window.onload = function() {
   let pronoun = ["the", "our"];
   let adj = ["great", "big"];
   let noun = ["jogger", "racoon"];
+  let extension = [".com", ".net", ".us", ".io"];
 
-  for (let p = 0; p < 2; p++) {
-    for (let a = 0; a < 2; a++) {
-      for (let n = 0; n < 2; n++) {
-        document.querySelector("#dng").innerHTML +=
-          pronoun[p] + adj[a] + noun[n] + ".com";
-        console.log("name domain");
+  for (let proInd = 0; proInd < pronoun.length; proInd++) {
+    for (let adjInd = 0; adjInd < adj.length; adjInd++) {
+      for (let nounInd = 0; nounInd < noun.lenght; nounInd++) {
+        for (let extInd = 0; extInd < extension.length; extInd++) {
+          console.log(
+            pronoun[proInd] + adj[adjInd] + noun[nounInd] + extension[extInd]
+          );
+        }
       }
     }
   }
